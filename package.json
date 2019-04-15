@@ -1,0 +1,46 @@
+{
+  "name": "littlecaesarsgraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app,app:* npm instalnodemon ./app.js --exec babel-node -e js",
+    "lint": "eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-graphql": "^0.2.0",
+    "apollo-link": "^1.2.11",
+    "apollo-server-express": "^2.4.8",
+    "apollo-tracing": "^0.5.2",
+    "apollo-utilities": "^1.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "graphql": "^14.2.1",
+    "graphql-extensions": "^0.5.7",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.11"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000
+    }
+  }
+}
